@@ -22,7 +22,7 @@
           <img
             class="d-block img-fluid w-100 "
             style="height:80vh!important;"
-            :src="require('@/assets/img/pcfondo.jpg')"
+            :src="require('@/assets/img/pcfondo.webp')"
             alt="image slot"
           >
         </template>
@@ -42,7 +42,7 @@
           <img
             class="d-block img-fluid w-100 "
             style="height:80vh!important;"
-            :src="require('@/assets/img/pcfondo.jpg')"
+            :src="require('@/assets/img/pcfondo.webp')"
             alt="image slot"
           >
         </template>
