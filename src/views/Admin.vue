@@ -6,9 +6,9 @@
         <template v-slot:cell(products)="data">
           <h5>Id: {{data.item.id}}</h5>
           <ul v-for="(product,index) in data.item.products" :key="index">
-            <li>Name: {{product.name}}</li>
-            <li>Price: {{product.price}}</li>
-            <li>Quantity: {{product.quantity}}</li>
+            <li>Nombre: {{product.name}}</li>
+            <li>Precio: {{product.price}}</li>
+            <li>Cantidad: {{product.quantity}}</li>
 
             <hr />
           </ul>
@@ -22,7 +22,7 @@
          <template v-slot:table-busy>
         <div class="text-center text-success my-2">
           <b-spinner class="align-middle"></b-spinner>
-          <strong>Loading...</strong>
+          <strong>Cargando...</strong>
         </div>
       </template>
       </b-table>

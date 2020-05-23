@@ -22,7 +22,7 @@
           <img
             class="d-block img-fluid w-100 "
             style="height:80vh!important;"
-            :src="require('@/assets/img/fruit3.jpg')"
+            :src="require('@/assets/img/pcfondo.jpg')"
             alt="image slot"
           >
         </template>
@@ -32,7 +32,7 @@
           <img
             class="d-block img-fluid w-100 "
             style="height:80vh!important;"
-            :src="require('@/assets/img/fruit2.jpg')"
+            :src="require('@/assets/img/procesador.webp')"
             alt="image slot"
           >
         </template>
@@ -42,7 +42,7 @@
           <img
             class="d-block img-fluid w-100 "
             style="height:80vh!important;"
-            :src="require('@/assets/img/fruit.jpg')"
+            :src="require('@/assets/img/pcfondo.jpg')"
             alt="image slot"
           >
         </template>

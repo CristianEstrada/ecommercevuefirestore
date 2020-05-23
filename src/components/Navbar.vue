@@ -3,7 +3,7 @@
   <b-navbar toggleable="lg" type="dark" variant="success">
     <b-navbar-brand @click="goHome" href="#">
        <b-icon-brightness-fill-high></b-icon-brightness-fill-high>
-      Ecommerce</b-navbar-brand>
+      PcPartKeep</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -12,7 +12,7 @@
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
        
-        <b-nav-item  @click="gotocart" active>Shopping Cart </b-nav-item>
+        <b-nav-item  @click="gotocart" active>Carrito de compras </b-nav-item>
     
 
         <b-nav-item-dropdown right >
@@ -20,7 +20,7 @@
           <template v-slot:button-content>
             <em>Admin</em>
           </template>
-          <b-dropdown-item v-b-modal.modal-1>Sign in</b-dropdown-item>
+          <b-dropdown-item v-b-modal.modal-1>Iniciar Sesion</b-dropdown-item>
           
         </b-nav-item-dropdown>
       </b-navbar-nav>
@@ -60,7 +60,7 @@
 
 
 
-      <b-button type="submit" block variant="primary">Submit</b-button>
+      <b-button type="submit" block variant="primary">Enviar</b-button>
      
     </b-form>
    
@@ -97,7 +97,7 @@ export default {
     },
     onSubmit(e){
       e.preventDefault();
-      if (this.form.user=='admin' && this.form.pass=='456789') {
+      if (this.form.user=='admin' && this.form.pass=='123456789') {
         this.$refs['my-modal'].hide()
         this.$router.push('/admin')
         localStorage.setItem('admin',JSON.stringify('true'))

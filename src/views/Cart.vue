@@ -5,7 +5,7 @@
 
   <b-row>
     <b-col>
-      <h2>Shopping Cart</h2>
+      <h2>Carrito de compras </h2>
     </b-col>
   </b-row>
 
@@ -68,37 +68,37 @@
   <b-row class="mt-4 text-center" v-if="cart.length > 0">
      <b-col>
        <b-button @click="clean" variant="info" block class="mr-2">
-          Clean
+          limpiar
         </b-button>
      </b-col>
     <b-col></b-col>
-     <b-col cols="4">Salvando el semestre - Youtube Channel</b-col>
+     <b-col cols="4">PcPartKeep</b-col>
     
      <b-col>
         
      </b-col>
      <b-col>
         <b-button    @click="buy" variant="success" block class="mr-2">
-          Buy
+          Comprar
         </b-button>
      </b-col>
   </b-row>
    <b-modal hide-header-close no-close-on-esc no-close-on-backdrop ref="modal-1" centered title="Purchase Completed ">
      <template slot="modal-footer">
-       <b-button class="mt-3" variant="info" block @click="clean">Close</b-button>
+       <b-button class="mt-3" variant="info" block @click="clean">Cerrar</b-button>
 
        
     </template>
-    <p  class="mb-4">Products:</p>
+    <p  class="mb-4">Productos:</p>
     <ul v-for="productFinal in ticket.products" :key="productFinal.id">
       <li >
-       Product name: {{ productFinal.name}}
+       nombre producto: {{ productFinal.name}}
       </li>
        <li >
-       Quantity: {{ productFinal.quantity }} 
+       Cantidad: {{ productFinal.quantity }} 
       </li>
        <li >
-       Price: {{ productFinal.price }}  
+       Precio: {{ productFinal.price }}  
       </li>
        <li >
        Total: {{ productFinal.price * productFinal.quantity }}

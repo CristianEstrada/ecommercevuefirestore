@@ -14,7 +14,7 @@
     class="mb-4"
   >
     <b-card-text>
-      <h5>Price: ${{fruit.price}}.00</h5>
+      <h5>Precio: ${{fruit.price}}.00</h5>
        <b-icon variant="warning" class="h1" icon="star-fill"></b-icon>
        <b-icon variant="warning" class="h1" icon="star-fill"></b-icon>
        <b-icon variant="warning" class="h1" icon="star-fill"></b-icon>
@@ -22,8 +22,8 @@
          <b-icon variant="warning" class="h1" icon="star-fill"></b-icon>
     </b-card-text>
 
-    <b-button v-if="!fruit.cart" :disabled="fruit.cart"  @click="fruit.cart=true,addtocart(JSON.parse(JSON.stringify(fruit)))" block href="#" variant="success">Add to Cart</b-button>
-    <b-button  v-if="fruit.cart" :disabled="fruit.cart"   block href="#" variant="warning">Already added to shopping cart</b-button>
+    <b-button v-if="!fruit.cart" :disabled="fruit.cart"  @click="fruit.cart=true,addtocart(JSON.parse(JSON.stringify(fruit)))" block href="#" variant="success">Añadir al Carro</b-button>
+    <b-button  v-if="fruit.cart" :disabled="fruit.cart"   block href="#" variant="warning">Ya se agrego al carrito de compras</b-button>
   </b-card>
     </b-col>
    
@@ -44,7 +44,7 @@ export default {
                 {
                     id:1,
                     quantity:1,
-                    name: 'Apple',
+                    name: 'Procesador',
                     price:1,
                     img:'@/assets/fruits/fruit1.jpg',
                     cart:false
@@ -52,7 +52,7 @@ export default {
                  {
                     id:2,
                     quantity:1,
-                    name: 'Orange',
+                    name: 'Board',
                     price:1,
                     img:'@/assets/fruits/fruit1.jpg',
                     cart:false
@@ -60,7 +60,7 @@ export default {
                  {
                     id:3,
                     quantity:1,
-                    name: 'Cherry',
+                    name: 'Pantalla',
                     price:1,
                     img:'@/assets/fruits/fruit1.jpg',
                     cart:false
@@ -68,7 +68,7 @@ export default {
                  {
                     id:4,
                     quantity:1,
-                    name: 'Strawberry',
+                    name: 'Teclado',
                     price:1,
                     img:'@/assets/fruits/fruit1.jpg',
                     cart:false
@@ -76,7 +76,7 @@ export default {
                  {
                     id:5,
                     quantity:1,
-                    name: 'Kiwi',
+                    name: 'Mouse',
                     price:1,
                     img:'@/assets/fruits/fruit1.jpg',
                     cart:false
@@ -84,7 +84,7 @@ export default {
                  {
                     id:6,
                     quantity:1,
-                    name: 'Banana',
+                    name: 'Case',
                     price:1,
                     img:'@/assets/fruits/fruit1.jpg',
                     cart:false
@@ -92,7 +92,7 @@ export default {
                  {
                     id:7,
                     quantity:1,
-                    name: 'Grape',
+                    name: 'Fuente',
                     price:1,
                     img:'@/assets/fruits/fruit1.jpg',
                     cart:false
@@ -100,7 +100,7 @@ export default {
                  {
                     id:8,
                     quantity:1,
-                    name: 'Apple 2',
+                    name: ' Ram',
                     price:1,
                     img:'@/assets/fruits/fruit1.jpg',
                     cart:false
